@@ -6,6 +6,7 @@ node_modules/
 *-lock.yaml
 yarn.lock
 config/
+config/config.*
 coverage/
 .idea/
 run/
