@@ -1,7 +1,12 @@
 
 const Service = require('egg').Service;
+const crypto = require('crypto');
 
 class UserService extends Service {
+  // 对数据进行md5加密，输入明文返回密文
+  getMd5Data(data) {
+    return crypto.createHash('md5').update(data).digest('hex');
+  }
   async addUser() {
     const { ctx } = this;
     const { userName, password } = ctx.params;

@@ -31,3 +31,8 @@ $ npm stop
 
 
 [egg]: https://eggjs.org
+
+### 介绍
+
+- node version: 20.9.0
+- 中间件: params(query/body统一封装为params), validate(参数校验), errorHandler(异常捕获)
